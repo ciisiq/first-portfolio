@@ -151,7 +151,7 @@
         padding: 10px;
         padding-left: 30px;
         padding-right: 30px;
-        height: 14%;
+        height: 18%;
 
         @include mobile {
           font-size: 25px;
@@ -167,7 +167,7 @@
         padding-right: 60px;
         padding-left: 60px;
         padding-top: 30px;
-        height: 60%;
+        height: 70%;
 
         @include mobile {
           font-size: 12px;
@@ -197,7 +197,7 @@
         h2 {
           color: $pink;
           font-size: 20px;
-          padding-top: 10px;
+          padding-top: 30px;
           text-align: left;
           max-height: 60%;
 

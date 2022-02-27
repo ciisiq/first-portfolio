@@ -1,6 +1,6 @@
 # My first portfolio 💪🏻
 
-## Demo: [WebSite](https://cintia-siqueira-portfolio.netlify.app/)
+## Demo: [Website](https://cisiq.dev/)
 
 ## Something to have in mind
 
@@ -11,13 +11,14 @@ I don't have the all knowledge right now to do what I dreamed, but in the future
 
 > "Simplicity–the art of maximizing the amount of work not done–is essential"
 
-## Features
+## Features coming soon
 
-- Create reusable components
-- Make the code clean
-- Refacture the code
-- do more animations
-- Change the sideBar to de rigth size
+- Create reusable components;
+- Make the code easy to read;
+- Refacture the code;
+- Put more fancy things;
+- Change style for the sidebar
+- Responsive one the projects works
 
 ## To start
 
@@ -31,13 +32,13 @@ npm  start
 
 Some librarys that I usded to help me
 
-| Library       | README                                         |
-| ------------- | ---------------------------------------------- |
-| Ityped        | [https://www.npmjs.com/package/ityped]         |
-| SCSS          | [https://sass-lang.com/documentation]          |
-| React-typical | [https://www.npmjs.com/package/react-typical]  |
-| Routes        | [https://reactrouter.com/docs/en/v6]           |
-| Icons         | https://mui.com/getting-started/installation/] |
+| Library       | README                                          |
+| ------------- | ----------------------------------------------- |
+| Ityped        | [https://www.npmjs.com/package/ityped]          |
+| SCSS          | [https://sass-lang.com/documentation]           |
+| React-typical | [https://www.npmjs.com/package/react-typical]   |
+| Routes        | [https://reactrouter.com/docs/en/v6]            |
+| Icons         | [https://mui.com/getting-started/installation/] |
 
 ## Attention
 
