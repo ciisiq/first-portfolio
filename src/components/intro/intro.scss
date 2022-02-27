@@ -17,51 +17,105 @@
     background-color: $darkBlue;
     box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.25);
 
+    @include mobile {
+      flex-direction: column;
+      align-items: center;
+    }
+
     .right {
       flex: 1;
       display: flex;
       align-items: center;
       justify-content: center;
       flex-direction: column;
+      width: 100%;
+      height: 100%;
 
-      .social-icons {
-        color: $grey;
-        padding: 8px;
-        padding-left: 0px;
-        text-align: center;
-        transform: scale(1.5);
+      .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         width: 100%;
         height: 100%;
 
-        .i {
+        @include mobile {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .social-icons {
           color: $grey;
           padding: 8px;
           padding-left: 0px;
-          list-style: none;
-          text-decoration: none;
+          text-align: center;
 
-          &:hover {
-            color: $pink;
+          @include mobile {
+            transform: scale(1);
+          }
+
+          .i {
+            color: $grey;
+            padding: 8px;
+            padding-left: 0px;
+            list-style: none;
+            text-decoration: none;
+
+            @include mobile {
+              padding: 2px;
+            }
+
+            &:hover {
+              color: $pink;
+            }
           }
         }
-      }
 
-      .message {
-        color: $grey;
-        display: flex;
-        flex-direction: column;
+        .myintro-container {
+          font-size: 60px;
 
-        .message-welcome {
-          font-size: 30px;
+          @include mobile {
+            font-size: 30px;
+          }
+
+          .first {
+            color: $grey;
+
+            .secondname {
+              color: $pink;
+              font-weight: 700;
+
+              @include mobile {
+                font-size: 30px;
+              }
+            }
+          }
         }
 
-        h1 {
-          font-size: 20px;
-          padding: 20px;
-          margin: 12px;
+        .message {
+          color: $grey;
+          display: flex;
+          flex-direction: column;
+
+          .myrole {
+            font-size: 30px;
+            padding-top: 5px;
+
+            @include mobile {
+              font-size: 15px;
+              padding-bottom: 5px;
+            }
+          }
         }
-        .profile-options {
-          padding: 20px;
+
+        .btn-wrapper {
+          height: 10%;
+          max-height: 70%;
+
+          @include mobile {
+            height: 30%;
+            max-height: 60%;
+          }
 
           .btn {
             border-radius: 50px;
@@ -73,7 +127,11 @@
             text-decoration: none;
             margin-top: 20px;
             font-weight: 700;
-            position: relative;
+
+            @include mobile {
+              font-size: 10px;
+              width: 80px;
+            }
 
             &:hover {
               transform: translateY(2px);
@@ -82,8 +140,7 @@
 
           .contactbtn {
             color: $grey;
-            border: 2px solid $pink;
-            font-size: 12px;
+            border: none;
             background-color: $pink;
             list-style: none;
             text-decoration: none;
@@ -92,22 +149,8 @@
           .getresume {
             margin: 0 0 0 28px;
             background-color: $grey;
-            border: 2px solid $grey;
+            border: none;
           }
-        }
-      }
-    }
-
-    .myintro-container {
-      font-size: 60px;
-      height: 60%;
-
-      .first {
-        color: $grey;
-
-        .secondname {
-          color: $pink;
-          font-weight: 700;
         }
       }
     }
@@ -119,16 +162,26 @@
       justify-content: center;
       text-align: center;
 
+      width: 100%;
+      height: 100%;
+
       .block-neon {
         display: flex;
         align-items: center;
         justify-content: center;
-        text-align: center;
         flex-direction: column;
         border-radius: 1rem;
         border: 10px double $pink;
-        padding: 100px 100px 100px 100px;
-        resize: none;
+        width: 70%;
+        height: 50%;
+
+        @include mobile {
+          flex-direction: column;
+          align-items: center;
+          width: 75%;
+          height: 70%;
+          border: 5px double $pink;
+        }
 
         h1 {
           color: $pink;
@@ -137,6 +190,12 @@
           padding-right: 20px;
           animation: pulse 3s infinite;
           font-family: "Pacifico", cursive;
+
+          @include mobile {
+            font-size: 60px;
+            display: flex;
+            flex-direction: column;
+          }
 
           @keyframes pulse {
             0% {
@@ -153,6 +212,10 @@
           font-size: 30px;
           font-weight: 600;
           padding: 0px 60px 0 60px;
+
+          @include mobile {
+            font-size: 15px;
+          }
         }
       }
     }

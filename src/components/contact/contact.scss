@@ -17,6 +17,11 @@
     background-color: $darkBlue;
     box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.25);
 
+    @include mobile {
+      flex-direction: column;
+      justify-content: center;
+    }
+
     .left {
       flex: 1;
       display: flex;
@@ -98,6 +103,12 @@
           display: flex;
           margin: 3px;
           align-items: flex-start;
+
+          @include mobile {
+            width: 200px;
+            height: 20px;
+            font-size: 15px;
+          }
         }
 
         input {
@@ -110,6 +121,11 @@
           font-size: 15px;
           padding-left: 10px;
           padding-right: 20px;
+
+          @include mobile {
+            width: 200px;
+            height: 30px;
+          }
         }
 
         textarea {
@@ -119,6 +135,11 @@
           padding-left: 10px;
           resize: none;
           background-color: $grey;
+
+          @include mobile {
+            width: 200px;
+            height: 30px;
+          }
         }
 
         .wrapper-text {

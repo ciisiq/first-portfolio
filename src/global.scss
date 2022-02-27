@@ -2,3 +2,12 @@ $darkBlue: #1f2135;
 $pink: #be5ea4;
 $grey: #eaeaea;
 $black: #232323;
+
+//breakpoints
+$width: 768px;
+
+@mixin mobile {
+  @media (max-width: #{$width}) {
+    @content;
+  }
+}
