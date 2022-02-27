@@ -7,7 +7,6 @@
   text-align: center;
   justify-content: center;
   height: 100vh;
-  min-height: fit-content;
 
   .block {
     display: flex;
@@ -16,110 +15,110 @@
     height: 90%;
     background-color: $darkBlue;
     box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.25);
+    position: relative;
 
-    .right {
-      flex: 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
+    .arrow {
+      height: 80px;
+      position: absolute;
+      cursor: pointer;
 
-      .title-block {
-        color: $pink;
-        font-size: 50px;
-        font-weight: 900;
-        border: 1px solid;
-        border-radius: 10px;
-        width: 50%;
-        padding: 10px;
-        padding-left: 30px;
-        padding-right: 30px;
-
-        .title-projects {
-          color: $pink;
-          font-size: 50px;
-          font-weight: 900;
-
-          width: 50%;
-          padding: 10px;
-          padding-left: 30px;
-          padding-right: 30px;
-        }
+      &.left {
+        left: 100px;
+        transform: rotateY(180deg);
       }
 
-      .title-about {
-        display: flex;
-        color: $pink;
-        width: 100px;
-        height: 43px;
-        left: 137px;
-        top: 388px;
-
-        font-family: Lato;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 36px;
-        line-height: 43px;
-      }
-
-      .text {
-        color: $grey;
-        width: 629px;
-        height: 170px;
-        left: 137px;
-        top: 449px;
-        font-family: Lato;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 24px;
-        line-height: 29px;
-        text-align: justify;
-      }
-
-      .mini-titles {
-        color: $pink;
-        display: flex;
-        width: 247px;
-        height: 29px;
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 29px;
+      &.rigth {
+        right: 100px;
       }
     }
 
-    .left {
-      flex: 1;
+    .slider {
+      height: 350px;
       display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
+      position: absolute;
+      left: 0;
+      transition: all 1s ease-out;
 
-      .title-left {
-        color: $pink;
-        width: 266px;
-        height: 58px;
-        font-weight: 700;
-        font-size: 48px;
-        line-height: 58px;
-      }
+      .container {
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
-      .image-project {
-        width: 111px;
-        height: 48px;
-        left: 939px;
-        top: 706px;
-        border-radius: 30px;
-      }
+        .item {
+          width: 700px;
+          height: 100%;
+          background-color: $grey;
+          border-radius: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
 
-      .btn-link {
-        background-color: $pink;
-        width: 60px;
-        height: 20px;
-        left: 966px;
-        top: 722px;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 17px;
+          .left {
+            flex: 6;
+            height: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .leftcontainer {
+              .imgcontainer {
+                img {
+                  width: 300px;
+                  border-radius: 10px;
+                  overflow: hidden;
+                }
+              }
+              .btn-link {
+                background-color: transparent;
+                color: $pink;
+                border: none;
+                font-weight: 700;
+                font-size: 14px;
+                cursor: pointer;
+
+                &:hover {
+                  color: $black;
+                  border-radius: 10px;
+                }
+              }
+            }
+          }
+
+          .right {
+            flex: 6;
+            height: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .rigthcontainer {
+              width: 90%;
+              height: 70%;
+              display: flex;
+              flex-direction: column;
+
+              h2 {
+                font-size: 20px;
+                color: $pink;
+                text-align: right;
+              }
+
+              p {
+                font-size: 13px;
+                color: $black;
+                text-align: right;
+              }
+
+              span {
+                font-size: 10px;
+                font-weight: 900;
+                color: $pink;
+                text-align: right;
+              }
+            }
+          }
+        }
       }
     }
   }
