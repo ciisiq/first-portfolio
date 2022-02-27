@@ -33,8 +33,8 @@ export default function Contact() {
 
   return (
     <div className="contact" id="contact">
-      <div className="block">
-        <div className="rigth">
+      <div className="rigth">
+        <div className="wrapper-rigth">
           <h1>Contact me</h1>
           <form ref={formRef} onSubmit={handleSubmit}>
             <h3>Name</h3>
@@ -72,36 +72,36 @@ export default function Contact() {
             </div>
           </form>
         </div>
-        <div className="left">
-          <div className="wrapper">
-            <h2 className="title">Please fell free to send a mesasge 😊</h2>
-            <h1 className="thanks">Thank you!</h1>
-            <div className="social-icons">
-              <a
-                className="i"
-                href="https://www.linkedin.com/in/cintia-siqueira/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <LinkedIn />
-              </a>
-              <a
-                className="i"
-                href="https://github.com/ciisiq"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <GitHub />
-              </a>
-              <a
-                className="i"
-                href="https://www.instagram.com/ciifotos/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <Instagram />
-              </a>
-            </div>
+      </div>
+      <div className="left">
+        <div className="wrapper-left">
+          <h2 className="please">Please fell free to send a message 😊</h2>
+          <h1 className="thanks">Thank you!</h1>
+          <div className="social-icons">
+            <a
+              className="i"
+              href="https://www.linkedin.com/in/cintia-siqueira/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <LinkedIn />
+            </a>
+            <a
+              className="i"
+              href="https://github.com/ciisiq"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <GitHub />
+            </a>
+            <a
+              className="i"
+              href="https://www.instagram.com/ciifotos/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Instagram />
+            </a>
           </div>
         </div>
       </div>

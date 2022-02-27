@@ -1,221 +1,214 @@
 @import "../../global.scss";
 
 .intro {
-  background-color: $grey;
+  background-color: $darkBlue;
+  box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.25);
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
   height: 100vh;
-  min-height: fit-content;
+  border-bottom: 50px solid $grey;
 
-  .block {
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .right {
+    flex: 1;
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
     width: 100%;
-    height: 90%;
-    background-color: $darkBlue;
-    box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.25);
+    height: 100%;
 
-    @include mobile {
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .right {
-      flex: 1;
+    .wrapper {
       display: flex;
-      align-items: center;
       justify-content: center;
+      align-items: center;
       flex-direction: column;
       width: 100%;
       height: 100%;
 
-      .wrapper {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+      @include mobile {
         flex-direction: column;
-        width: 100%;
-        height: 100%;
+        align-items: center;
+      }
+
+      .social-icons {
+        color: $grey;
+        padding: 8px;
+        padding-left: 0px;
+        text-align: center;
+        transform: scale(1.5);
 
         @include mobile {
-          flex-direction: column;
-          align-items: center;
+          transform: scale(1);
         }
 
-        .social-icons {
+        .i {
           color: $grey;
           padding: 8px;
           padding-left: 0px;
-          text-align: center;
+          list-style: none;
+          text-decoration: none;
 
           @include mobile {
-            transform: scale(1);
+            padding: 2px;
           }
 
-          .i {
-            color: $grey;
-            padding: 8px;
-            padding-left: 0px;
-            list-style: none;
-            text-decoration: none;
-
-            @include mobile {
-              padding: 2px;
-            }
-
-            &:hover {
-              color: $pink;
-            }
-          }
-        }
-
-        .myintro-container {
-          font-size: 60px;
-
-          @include mobile {
-            font-size: 30px;
-          }
-
-          .first {
-            color: $grey;
-
-            .secondname {
-              color: $pink;
-              font-weight: 700;
-
-              @include mobile {
-                font-size: 30px;
-              }
-            }
-          }
-        }
-
-        .message {
-          color: $grey;
-          display: flex;
-          flex-direction: column;
-
-          .myrole {
-            font-size: 30px;
-            padding-top: 5px;
-
-            @include mobile {
-              font-size: 15px;
-              padding-bottom: 5px;
-            }
-          }
-        }
-
-        .btn-wrapper {
-          height: 10%;
-          max-height: 70%;
-
-          @include mobile {
-            height: 30%;
-            max-height: 60%;
-          }
-
-          .btn {
-            border-radius: 50px;
-            padding: 14px 0;
-            width: 160px;
-            cursor: pointer;
-            transition: 0.2s;
-            list-style: none;
-            text-decoration: none;
-            margin-top: 20px;
-            font-weight: 700;
-
-            @include mobile {
-              font-size: 10px;
-              width: 80px;
-            }
-
-            &:hover {
-              transform: translateY(2px);
-            }
-          }
-
-          .contactbtn {
-            color: $grey;
-            border: none;
-            background-color: $pink;
-            list-style: none;
-            text-decoration: none;
-          }
-
-          .getresume {
-            margin: 0 0 0 28px;
-            background-color: $grey;
-            border: none;
+          &:hover {
+            color: $pink;
           }
         }
       }
-    }
 
-    .left {
-      flex: 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-
-      width: 100%;
-      height: 100%;
-
-      .block-neon {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        border-radius: 1rem;
-        border: 10px double $pink;
-        width: 70%;
-        height: 50%;
+      .myintro-container {
+        font-size: 60px;
 
         @include mobile {
-          flex-direction: column;
-          align-items: center;
-          width: 75%;
-          height: 70%;
-          border: 5px double $pink;
-        }
-
-        h1 {
-          color: $pink;
-          font-size: 90px;
-          font-weight: 900;
-          padding-right: 20px;
-          animation: pulse 3s infinite;
-          font-family: "Pacifico", cursive;
-
-          @include mobile {
-            font-size: 60px;
-            display: flex;
-            flex-direction: column;
-          }
-
-          @keyframes pulse {
-            0% {
-              color: $grey;
-            }
-            100% {
-              color: $pink;
-            }
-          }
-        }
-
-        span {
-          color: $grey;
           font-size: 30px;
-          font-weight: 600;
-          padding: 0px 60px 0 60px;
+        }
+
+        .first {
+          color: $grey;
+
+          .secondname {
+            color: $pink;
+            font-weight: 700;
+
+            @include mobile {
+              font-size: 30px;
+            }
+          }
+        }
+      }
+
+      .message {
+        color: $grey;
+        display: flex;
+        flex-direction: column;
+
+        .myrole {
+          font-size: 30px;
+          padding-top: 5px;
 
           @include mobile {
             font-size: 15px;
+            padding-bottom: 5px;
           }
+        }
+      }
+
+      .btn-wrapper {
+        height: 10%;
+        max-height: 70%;
+
+        @include mobile {
+          height: 30%;
+          max-height: 60%;
+        }
+
+        .btn {
+          border-radius: 50px;
+          padding: 14px 0;
+          width: 160px;
+          cursor: pointer;
+          transition: 0.2s;
+          list-style: none;
+          text-decoration: none;
+          margin-top: 20px;
+          font-weight: 700;
+
+          @include mobile {
+            font-size: 10px;
+            width: 80px;
+          }
+
+          &:hover {
+            transform: translateY(2px);
+          }
+        }
+
+        .contactbtn {
+          color: $grey;
+          border: none;
+          background-color: $pink;
+          list-style: none;
+          text-decoration: none;
+        }
+
+        .getresume {
+          margin: 0 0 0 28px;
+          background-color: $grey;
+          border: none;
+        }
+      }
+    }
+  }
+
+  .left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    width: 100%;
+    height: 100%;
+
+    .block-neon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      border-radius: 1rem;
+      border: 10px double $pink;
+      width: 70%;
+      height: 50%;
+
+      @include mobile {
+        flex-direction: column;
+        align-items: center;
+        width: 75%;
+        height: 70%;
+        border: 5px double $pink;
+      }
+
+      h1 {
+        color: $pink;
+        font-size: 90px;
+        font-weight: 900;
+        padding-right: 20px;
+        animation: pulse 3s infinite;
+        font-family: "Pacifico", cursive;
+
+        @include mobile {
+          font-size: 60px;
+          display: flex;
+          flex-direction: column;
+        }
+
+        @keyframes pulse {
+          0% {
+            color: $grey;
+          }
+          100% {
+            color: $pink;
+          }
+        }
+      }
+
+      span {
+        color: $grey;
+        font-size: 30px;
+        font-weight: 600;
+        padding: 0px 60px 0 60px;
+
+        @include mobile {
+          font-size: 15px;
         }
       }
     }
