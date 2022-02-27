@@ -76,9 +76,13 @@ export default function About() {
                   1000,
                   "Photography lover 📷",
                   1000,
-                  "Will be a great developer in the future 😍",
+                  "I will be a great developer in the future 😍",
                   1000,
                   "I keep learning things 😉",
+                  1000,
+                  "Pet lover 😻🐶",
+                  1000,
+                  "Japan culture lover and games 🏯🎮",
                   1000,
                 ]}
               />

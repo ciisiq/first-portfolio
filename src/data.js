@@ -60,4 +60,14 @@ export const data = [
     demo: "https://calculator-react-studies.netlify.app/",
     hastags: "#ReactJs #Calculator #Training #tutorial #study",
   },
+
+  {
+    id: "7",
+    title: "My first portfolio",
+    desc: "of course this whole site would be here haha, it was a big challenge for me to create this site, because with a creative mind I had many challenges. It's still not how I'd like it to be, once I have the knowledge I need it will be.",
+    img: "assets/portfolio.png",
+    github: "https://github.com/ciisiq/first-portfolio",
+    demo: "https://cinsdev.netlify.app/",
+    hastags: "#ReactJs #Portfolio #study",
+  },
 ];
