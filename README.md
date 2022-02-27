@@ -5,7 +5,7 @@
 ## Something to have in mind
 
 _One of the 12 Agile Principles_
-One of the 12 Agile Principles, just made sense to me doing this portfolio, the number "10 Simplicity Essential" which makes me think all time, how difficult is for me with a graphic design background to think simple. I wasted a lot of time doing some "high fidelity". I was thinking that was not enough. But I'm after speaking with some boot campers I got what I needed to make this simple.
+One of the 12 Agile Principles, just made sense to me doing this portfolio, the number "10 Simplicity Essential" which makes me think all time, how difficult is for me with a graphic design background to think simple. I wasted a lot of time doing some "high fidelity". I was thinking that was not enough. But after speaking with some bootcampers, I got what I needed to make this simple.
 
 I don't have the all knowledge right now to do what I dreamed, but in the future, I will come back and do the best one.
 
