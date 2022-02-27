@@ -13,7 +13,9 @@ export default function Projects() {
 
   return (
     <div className="projects" id="projects">
-      <h1>Projects</h1>
+      <div className="title-page">
+        <h1>Projects</h1>
+      </div>
       <div
         className="slider"
         style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
