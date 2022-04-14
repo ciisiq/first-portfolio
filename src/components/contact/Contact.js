@@ -7,10 +7,6 @@ export default function Contact() {
   const formRef = useRef();
   const [done, setDone] = useState(false);
 
-  // const SERVICE = process.env.YOUR_SERVICE_ID;
-  // const TEMPLATE = process.env.YOUR_TEMPLATE_ID;
-  // const USER_ID = process.env.YOUR_USER_ID;
-
   const handleSubmit = (e) => {
     e.preventDefault();
     emailjs
@@ -64,7 +60,7 @@ export default function Contact() {
               type="text"
               className="text-area"
               placeholder="Message"
-              name="user_message"
+              name="message"
             ></textarea>
             <div className="wrapper-text">
               <button className="btnform">Submit</button>
