@@ -2,10 +2,10 @@ export const data = [
   {
     id: "1",
     title: "Job Tracker - School of Code",
-    desc: "This project is in progress, come back later to see it ready.",
-    img: "assets/image.jpg",
-    github: "# ",
-    demo: "#",
+    desc: "Project created in 4 weeks in a team of 6 people, our idea was something that even other people could use to list their work without using tables or email",
+    img: "assets/job.png",
+    github: "https://github.com/SchoolOfCode/final-project-repo-bossa-nova",
+    demo: "https://bossanova.netlify.app/",
     hastags: "#ReactJs #Teamwork #finalProject",
   },
 
