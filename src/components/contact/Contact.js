@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import "./contact.scss";
-import { LinkedIn, GitHub, Instagram } from "@material-ui/icons";
+import { LinkedIn, GitHub, Instagram, Twitter } from "@material-ui/icons";
 import emailjs from "@emailjs/browser";
 
 export default function Contact() {
@@ -97,6 +97,14 @@ export default function Contact() {
               rel="noreferrer"
             >
               <Instagram />
+            </a>
+            <a
+              className="i"
+              href="https://twitter.com/Cii_siq"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Twitter />
             </a>
           </div>
         </div>

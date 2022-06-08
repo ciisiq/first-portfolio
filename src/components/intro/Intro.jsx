@@ -1,6 +1,6 @@
 import React from "react";
 import "./intro.scss";
-import { LinkedIn, GitHub, Instagram } from "@material-ui/icons";
+import { LinkedIn, GitHub, Instagram, Twitter } from "@material-ui/icons";
 
 export default function Intro() {
   return (
@@ -31,6 +31,14 @@ export default function Intro() {
               rel="noreferrer"
             >
               <Instagram />
+            </a>
+            <a
+              className="i"
+              href="https://twitter.com/Cii_siq"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Twitter />
             </a>
           </div>
           <div className="myintro-container">
