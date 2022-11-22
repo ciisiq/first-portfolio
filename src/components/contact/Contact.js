@@ -35,6 +35,7 @@ export default function Contact() {
           <form ref={formRef} onSubmit={handleSubmit}>
             <h3>Name</h3>
             <input
+              required 
               type="text"
               className="input"
               placeholder="Your Name"
@@ -49,6 +50,7 @@ export default function Contact() {
             ></input>
             <h3>Email</h3>
             <input
+              required 
               type="text"
               className="input"
               placeholder="Email"
@@ -56,6 +58,7 @@ export default function Contact() {
             ></input>
             <h3>Message</h3>
             <textarea
+              required 
               rows="5"
               type="text"
               className="text-area"

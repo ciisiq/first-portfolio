@@ -55,7 +55,7 @@ export default function Intro() {
             <a href="#contact">
               <button className="btn contactbtn">Contact me</button>
             </a>
-            <a href="CVCintia.pdf" download="Cintia CVCintia.pdf">
+            <a href="CVCintia_site.pdf" download="Cintia CVCintia_site.pdf">
               <button className="btn getresume"> Get Resume</button>
             </a>
           </div>
