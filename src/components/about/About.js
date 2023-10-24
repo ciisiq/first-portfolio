@@ -1,6 +1,6 @@
-import React from "react";
-import "./about.scss";
-import Typical from "react-typical";
+import React from 'react';
+import './about.scss';
+import { TypeAnimation } from 'react-type-animation';
 
 export default function About() {
   return (
@@ -71,22 +71,25 @@ export default function About() {
 
           <div className="moving-text">
             <h2>
-              <Typical
-                loop={Infinity}
-                steps={[
-                  "JavaScript learner 🤭",
+              <TypeAnimation
+                sequence={[
+                  'JavaScript learner 🤭',
                   1000,
-                  "Photography lover 📷",
+                  'Photography lover 📷',
                   1000,
-                  "I will be a great developer in the future 😍",
+                  'I will be a great developer in the future 😍',
                   1000,
-                  "I keep learning things 😉",
+                  'I keep learning things 😉',
                   1000,
-                  "Pet lover 😻🐶",
+                  'Pet lover 😻🐶',
                   1000,
-                  "Japan culture lover and games 🏯🎮",
+                  'Japan culture lover and games 🏯🎮',
                   1000,
                 ]}
+                wrapper="span"
+                speed={50}
+                style={{ fontSize: '2em', display: 'inline-block' }}
+                repeat={Infinity}
               />
             </h2>
           </div>

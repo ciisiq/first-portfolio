@@ -1,7 +1,7 @@
-import React, { useRef, useState } from "react";
-import "./contact.scss";
-import { LinkedIn, GitHub, Instagram, Twitter } from "@material-ui/icons";
-import emailjs from "@emailjs/browser";
+import React, { useRef, useState } from 'react';
+import './contact.scss';
+import { LinkedIn, GitHub, Instagram, Twitter } from '@material-ui/icons';
+import emailjs from '@emailjs/browser';
 
 export default function Contact() {
   const formRef = useRef();
@@ -11,10 +11,10 @@ export default function Contact() {
     e.preventDefault();
     emailjs
       .sendForm(
-        "service_jgkx3qg",
-        "template_aap8k1f",
+        'service_jgkx3qg',
+        'template_aap8k1f',
         formRef.current,
-        "user_tbhQ2wXn4FRiymCtwJJtU"
+        'user_tbhQ2wXn4FRiymCtwJJtU'
       )
       .then(
         (result) => {
@@ -35,7 +35,7 @@ export default function Contact() {
           <form ref={formRef} onSubmit={handleSubmit}>
             <h3>Name</h3>
             <input
-              required 
+              required
               type="text"
               className="input"
               placeholder="Your Name"
@@ -43,6 +43,7 @@ export default function Contact() {
             ></input>
             <h3>Subject</h3>
             <input
+              required
               type="text"
               className="input"
               placeholder="Subject"
@@ -50,15 +51,15 @@ export default function Contact() {
             ></input>
             <h3>Email</h3>
             <input
-              required 
-              type="text"
+              required
+              type="email"
               className="input"
-              placeholder="Email"
+              placeholder="youremail@email.com"
               name="user_email"
             ></input>
             <h3>Message</h3>
             <textarea
-              required 
+              required
               rows="5"
               type="text"
               className="text-area"
@@ -67,7 +68,7 @@ export default function Contact() {
             ></textarea>
             <div className="wrapper-text">
               <button className="btnform">Submit</button>
-              <p>{done && "Message sent, thank you!"}</p>
+              <p>{done && 'Message sent, thank you!'}</p>
             </div>
           </form>
         </div>
@@ -101,13 +102,18 @@ export default function Contact() {
             >
               <Instagram />
             </a>
+
             <a
               className="i"
               href="https://twitter.com/Cii_siq"
               target="_blank"
               rel="noreferrer"
             >
-              <Twitter />
+              <img
+                className="twitter"
+                src="/icons8-twitterx-20.svg"
+                alt="twitter logo"
+              />
             </a>
           </div>
         </div>

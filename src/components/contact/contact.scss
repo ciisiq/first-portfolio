@@ -1,4 +1,4 @@
-@import "../../global.scss";
+@import '../../global.scss';
 
 .contact {
   background-color: $darkBlue;
@@ -71,16 +71,16 @@
           transform: scale(1);
         }
 
+        .twitter {
+          width: 24px;
+        }
+
         .i {
           color: $grey;
           padding: 8px;
           padding-left: 0px;
           list-style: none;
           text-decoration: none;
-
-          &:hover {
-            color: $pink;
-          }
         }
       }
     }

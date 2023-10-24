@@ -1,8 +1,9 @@
 # My first portfolio 💪🏻
 
-## Demo: [Website](https://cisiq.dev/)
+This is my first portolio as a front-end developer.
 
-## Figma: [Fima](https://www.figma.com/file/j5do02UFrfH9FECG5febFa/My-portfolio-2.0?node-id=0%3A1)
+Demo: [Website](https://cisiq.dev/)<br>
+Figma: [Fima](https://www.figma.com/file/j5do02UFrfH9FECG5febFa/My-portfolio-2.0?node-id=0%3A1)
 
 ## Something to have in mind
 
@@ -12,53 +13,11 @@ I don't have the all knowledge right now to do what I dreamed, but in the future
 
 > "Simplicity–the art of maximizing the amount of work not done–is essential"
 
-## Features coming soon
-
-- Create reusable components;
-- Make the code easy to read;
-- Refacture the code;
-- Put more fancy things;
-- Change style for the sidebar
-- Responsive one the projects works
-
-## To start
+## How to start
 
 ```sh
-How to start
 npm i
-npm  start
-```
-
-## Library that I used
-
-Some librarys that I usded to help me
-
-| Library       | README                                          |
-| ------------- | ----------------------------------------------- |
-| Ityped        | [https://www.npmjs.com/package/ityped]          |
-| SCSS          | [https://sass-lang.com/documentation]           |
-| React-typical | [https://www.npmjs.com/package/react-typical]   |
-| Routes        | [https://reactrouter.com/docs/en/v6]            |
-| Icons         | [https://mui.com/getting-started/installation/] |
-
-## Attention
-
-Typical animation just worked with me using:
-npm install react-typical --force
-
-```sh
-Ityped.js
-npm install ityped
-```
-
-```sh
-Routes:
-npm install react-router-dom@6
-```
-
-```sh
-SCSS: using instead of normal css
-npm add node-sass
+npm start
 ```
 
 ```sh
@@ -69,4 +28,11 @@ npm add @material-ui/icons
 how to import ==>> import { NAMEICON } from "@material-ui/icons";
 ```
 
-> Note: `npm uninstall NOME` For uninstall something:
+## Library that I used
+
+| Library              | README                                               |
+| -------------------- | ---------------------------------------------------- |
+| SCSS                 | [https://sass-lang.com/documentation]                |
+| React-type-animation | [https://www.npmjs.com/package/react-type-animation] |
+| Routes               | [https://reactrouter.com/docs/en/v6]                 |
+| Icons                | [https://mui.com/getting-started/installation/]      |
