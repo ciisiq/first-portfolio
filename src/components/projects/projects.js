@@ -1,12 +1,12 @@
-import React, { useState } from "react";
-import "./projects.scss";
-import { data } from "../../data";
+import React, { useState } from 'react';
+import './projects.scss';
+import { data } from '../../data';
 
 export default function Projects() {
   const [currentSlide, setcurrentSlide] = useState(0);
 
   const handleClick = (way) => {
-    way === "left"
+    way === 'left'
       ? setcurrentSlide(currentSlide > 0 ? currentSlide - 1 : 2)
       : setcurrentSlide(currentSlide < data.length - 1 ? currentSlide + 1 : 0);
   };
@@ -14,7 +14,7 @@ export default function Projects() {
   return (
     <div className="projects" id="projects">
       <div className="title-page">
-        <h1>Projects</h1>
+        <h1>Work</h1>
       </div>
       <div
         className="slider"
@@ -60,13 +60,13 @@ export default function Projects() {
       <img
         src="assets/arrow.png"
         className="arrow left"
-        onClick={() => handleClick("left")}
+        onClick={() => handleClick('left')}
         alt="arrow"
       />
       <img
         src="assets/arrow.png"
         className="arrow rigth"
-        onClick={() => handleClick("rigth")}
+        onClick={() => handleClick('rigth')}
         alt="arrow"
       />
     </div>
