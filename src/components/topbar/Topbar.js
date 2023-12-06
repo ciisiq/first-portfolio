@@ -20,7 +20,7 @@ export default function TopBar({ open, setOpen }) {
           <div className="itemContainer">
             <a href="#projects" className="logo">
               <Code className="icon" />
-              <span>Projects</span>
+              <span>Work</span>
             </a>
           </div>
           <div className="itemContainer">

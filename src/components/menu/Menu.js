@@ -1,10 +1,10 @@
-import React from "react";
-import "./menu.scss";
-import { Code } from "@material-ui/icons";
+import React from 'react';
+import './menu.scss';
+import { Code } from '@material-ui/icons';
 
 export default function Menu({ open, setOpen }) {
   return (
-    <div className={"menu  " + (open && "active")}>
+    <div className={'menu  ' + (open && 'active')}>
       <ul>
         <li onClick={() => setOpen(false)}>
           <a href="#intro">
@@ -21,7 +21,7 @@ export default function Menu({ open, setOpen }) {
         <li onClick={() => setOpen(false)}>
           <a href="#projects">
             <Code className="icon-link" />
-            Projects
+            Work
           </a>
         </li>
         <li onClick={() => setOpen(false)}>
