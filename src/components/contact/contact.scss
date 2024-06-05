@@ -2,18 +2,15 @@
 
 .contact {
   background-color: $darkBlue;
-  box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.25);
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
   height: 100vh;
-  border-bottom: 50px solid $grey;
 
   @include mobile {
     flex-direction: column;
     justify-content: center;
-    border-bottom: 20px solid $grey;
   }
 
   .left {

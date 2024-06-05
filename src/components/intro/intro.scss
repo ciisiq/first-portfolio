@@ -1,18 +1,12 @@
-@import "../../global.scss";
+@import '../../global.scss';
 
 .intro {
   background-color: $darkBlue;
-  box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.25);
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
   height: 100vh;
-  border-bottom: 50px solid $grey;
-
-  @include mobile {
-    border-bottom: 20px solid $grey;
-  }
 
   @include mobile {
     flex-direction: column;
@@ -168,16 +162,17 @@
       justify-content: center;
       flex-direction: column;
       border-radius: 1rem;
-      border: 10px double $pink;
+      border: 3px solid $pink;
       width: 70%;
       height: 50%;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
       @include mobile {
         flex-direction: column;
         align-items: center;
         width: 75%;
         height: 70%;
-        border: 5px double $pink;
+        border: 2px solid $pink;
       }
 
       h1 {
@@ -186,7 +181,7 @@
         font-weight: 900;
         padding-right: 20px;
         animation: pulse 3s infinite;
-        font-family: "Pacifico", cursive;
+        font-family: 'Pacifico', cursive;
 
         @include mobile {
           font-size: 60px;

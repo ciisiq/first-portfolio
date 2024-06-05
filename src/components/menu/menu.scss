@@ -1,4 +1,4 @@
-@import "../../global.scss";
+@import '../../global.scss';
 
 .menu {
   width: 300px;
@@ -23,7 +23,7 @@
   ul {
     margin: 0;
     padding: 0;
-    list-style: none;
+    // list-style: none;
     font-size: 30px;
     font-weight: 600;
     color: $black;

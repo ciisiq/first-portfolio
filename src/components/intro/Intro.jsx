@@ -1,6 +1,8 @@
-import React from "react";
-import "./intro.scss";
-import { LinkedIn, GitHub, Instagram, Twitter } from "@material-ui/icons";
+import './intro.scss';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import XIcon from '@mui/icons-material/X';
 
 export default function Intro() {
   return (
@@ -14,7 +16,7 @@ export default function Intro() {
               target="_blank"
               rel="noreferrer"
             >
-              <LinkedIn />
+              <LinkedInIcon />
             </a>
             <a
               className="i"
@@ -22,7 +24,7 @@ export default function Intro() {
               target="_blank"
               rel="noreferrer"
             >
-              <GitHub />
+              <GitHubIcon />
             </a>
             <a
               className="i"
@@ -30,7 +32,7 @@ export default function Intro() {
               target="_blank"
               rel="noreferrer"
             >
-              <Instagram />
+              <InstagramIcon />
             </a>
             <a
               className="i"
@@ -38,7 +40,7 @@ export default function Intro() {
               target="_blank"
               rel="noreferrer"
             >
-              <Twitter />
+              <XIcon />
             </a>
           </div>
           <div className="myintro-container">
@@ -55,8 +57,12 @@ export default function Intro() {
             <a href="#contact">
               <button className="btn contactbtn">Contact me</button>
             </a>
-            <a href="CVCintia_site.pdf" download="Cintia CVCintia_site.pdf">
-              <button className="btn getresume"> Get Resume</button>
+            <a
+              href="https://cisiq.myportfolio.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button className="btn getresume"> Design Portfolio</button>
             </a>
           </div>
         </div>

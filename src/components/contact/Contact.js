@@ -1,6 +1,10 @@
 import React, { useRef, useState } from 'react';
 import './contact.scss';
-import { LinkedIn, GitHub, Instagram, Twitter } from '@material-ui/icons';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import XIcon from '@mui/icons-material/X';
+
 import emailjs from '@emailjs/browser';
 
 export default function Contact() {
@@ -84,7 +88,7 @@ export default function Contact() {
               target="_blank"
               rel="noreferrer"
             >
-              <LinkedIn />
+              <LinkedInIcon />
             </a>
             <a
               className="i"
@@ -92,7 +96,7 @@ export default function Contact() {
               target="_blank"
               rel="noreferrer"
             >
-              <GitHub />
+              <GitHubIcon />
             </a>
             <a
               className="i"
@@ -100,7 +104,7 @@ export default function Contact() {
               target="_blank"
               rel="noreferrer"
             >
-              <Instagram />
+              <InstagramIcon />
             </a>
 
             <a
@@ -109,11 +113,7 @@ export default function Contact() {
               target="_blank"
               rel="noreferrer"
             >
-              <img
-                className="twitter"
-                src="/icons8-twitterx-20.svg"
-                alt="twitter logo"
-              />
+              <XIcon />
             </a>
           </div>
         </div>

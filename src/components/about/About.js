@@ -4,80 +4,83 @@ import { TypeAnimation } from 'react-type-animation';
 
 export default function About() {
   return (
-    <div className="about" id="about">
+    <section className="about" id="about">
       <div className="about-title"></div>
       <div className="right">
         <div className="block">
           <div className="wrapper">
             <div className="designer-skills">
-              <h1>Designer Skills</h1>
-              <p>
-                • Design thinking
-                <br /> • Photoshop
-                <br /> • Figma
-                <br /> • Illustrator
-                <br /> • Lightroom
-                <br /> • InDesign
-              </p>
+              <h2>Designer Skills</h2>
+              <ul>
+                <li>Design thinking</li>
+                <li>Figma</li>
+                <li>Photoshop</li>
+                <li>Illustrator</li>
+                <li>Lightroom</li>
+                <li>InDesign</li>
+              </ul>
             </div>
 
             <div className="developer-skills">
-              <h1>Developer Skills</h1>
-              <p>
-                • Problem solving
-                <br /> • JavaScript
-                <br /> • ReactJS
-                <br /> • HTML/CSS
-                <br /> • Nodejs
-                <br /> • SQL
-                <br /> • Netlify
-                <br /> • Git
-              </p>
+              <h2>Developer Skills</h2>
+              <ul>
+                <li>JavaScript</li>
+                <li>TypeScript</li>
+                <li>ReactJS</li>
+                <li>Ui libraries</li>
+                <li>HTML/CSS</li>
+                <li>Nodejs</li>
+                <li>Git</li>
+              </ul>
             </div>
-            <div className="personal-text">
-              <h1>Personal Skills</h1>
-              <p>
-                • Teamwork
-                <br /> • Communication
-                <br /> • Agile Methodologies
-                <br /> • Customer Experience
-                <br /> • Self Driven
-              </p>
+            <div className="soft-skills">
+              <h2>Soft Skills</h2>
+              <ul>
+                <li>Teamwork</li>
+                <li>Self Driven</li>
+                <li>Problem solving</li>
+                <li>Communication</li>
+                <li>Agile Methodologies</li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
-      <div className="left">
+      <section className="left">
         <div className="wrapper-left">
           <h1>About</h1>
           <text className="about-me">
-            Hi, I'm a Brazilian living in London since 2019, so I can speak
-            Portuguese and English. I have a degree in Graphic Design in Brazil
-            and I moved here well when I graduated in Brazil, I ended up not
-            working in the area of Graphic Design.
-            <br />
-            <br />
-            I spent my first 2 years in London studying the language and culture
-            and now more confident I thought about focusing on my career.
-            <br />
-            <br />
-            When I was younger, at 16/17 I had my first contact with HTML and
-            CSS, that's when I really liked the creative area and page design. I
-            ended up going down that path and today I see that I want to go back
-            and go down the path of developing programs and websites.
-            <br />
-            <br />I believe that both knowledge together are a great advantage.
+            <p>
+              🌟 Passionate Software Engineer focused on Front-End development
+              and web applications, dedicated to continuous growth in the
+              dynamic tech landscape. I bring a creative, communicative, and
+              easy-going approach to every collaboration I engage.
+            </p>
+            <p>
+              🚀 Proficient in crafting scalable web applications using a modern
+              tech stack, in JavaScript, ReactJs, Nodejs, and Tailwind. It's not
+              just about the code; it's about collaboration, time management,
+              and Agile methodology using CI/CD delivery. A tech enthusiast with
+              a keen sense of teamwork and a drive to deliver results.
+            </p>
+            <p>
+              🎨 My background in Graphic Design, coupled with my design
+              thinking skills, help me in positions where I can contribute as a
+              UX/UI designer. I believe in applying design concepts and
+              user-centred thinking to create exceptional user experiences,
+              blending the artistry of design with code.
+            </p>
           </text>
 
           <div className="moving-text">
-            <h2>
+            <p>
               <TypeAnimation
                 sequence={[
                   'JavaScript learner 🤭',
                   1000,
                   'Photography lover 📷',
                   1000,
-                  'I will be a great developer in the future 😍',
+                  'I love chess ♟️',
                   1000,
                   'I keep learning things 😉',
                   1000,
@@ -91,10 +94,10 @@ export default function About() {
                 style={{ fontSize: '2em', display: 'inline-block' }}
                 repeat={Infinity}
               />
-            </h2>
+            </p>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </section>
   );
 }
